@@ -24,7 +24,7 @@ class Computer
 
   def code_algorithm(code)
     code_guess = @code_array[rand(@code_array.length)]
-    puts "The computers guess is #{@code_guess}"
+    puts "The computers guess is #{code_guess}"
     if code_guess == code
       puts 'The Computer broke your code!'
       @player_code_guessed = true
@@ -33,7 +33,7 @@ class Computer
       puts "\nPress enter for next computer guess"
       gets.chomp
     end
-    @code_array.select! { partial_match(code, code_guess) == partial_match(c, code_guess) }
+    @code_array.select! { |c| partial_match(code, code_guess) == partial_match(c, code_guess) }
   end
 
   def partial_match(code, code_guess, should_print = false)

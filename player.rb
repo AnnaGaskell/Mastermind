@@ -23,7 +23,7 @@ class Player
 
   def player_code_input
     puts "Please enter your secret code made of four colors..."
-    puts "Choose from the following choices then hit the enter key: Red, orange, yellow, green, blue and violet"
+    puts "\nType each choice separated by the enter key: Red, orange, yellow, green, blue and violet"
     4.times do
       @code.push(gets.chomp)
     end

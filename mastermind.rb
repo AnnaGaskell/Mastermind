@@ -2,8 +2,8 @@
 
 require './game'
 def display
-    puts "Welcome to MasterMind!
-    
+  puts "Welcome to MasterMind!
+
     This is a codebreaking game with two players
 
     Today you will play against the computer as either the CodeMaker or CodeBreaker
