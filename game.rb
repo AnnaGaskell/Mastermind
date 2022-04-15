@@ -10,7 +10,7 @@ class Game
 
   def make_or_break
     puts "\nWould you like to be CodeMaker or CodeBreaker?"
-    puts "Please type either make or break"
+    puts "\nPlease type either make or break"
     answer = gets.chomp.downcase
     until answer.match?(/^make$|^break$/)
       puts "Please try again - Type either make or break"
